@@ -1,7 +1,7 @@
 # HaloCustomsLobby
 Keiner hat dich gefragt.
 # Was habe ich getan?
-private String getRemoteUrl() throws Exception {
+    private String getRemoteUrl() throws Exception {
     AWSElasticBeanstalkGitPushRequest request = new AWSElasticBeanstalkGitPushRequest();
     request.setHost(getGitPushHost());
 
@@ -16,4 +16,4 @@ private String getRemoteUrl() throws Exception {
     URI uri = auth.deriveRemote(accessKey, secretKey);
 
     return uri.toString();
-}
+    }
